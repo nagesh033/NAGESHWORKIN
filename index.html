@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — MERN Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">NAGESH BELKAR</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home"     class="nav-a">Home</a></li>
+      <li><a href="#skills"   class="nav-a">Skills</a></li>
+      <li><a href="#mern"     class="nav-a">MERN</a></li>
+      <li><a href="#projects" class="nav-a">Projects</a></li>
+      <li><a href="#about"    class="nav-a">About</a></li>
+      <li><a href="#contact"  class="nav-a">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-h1">
+        Full-Stack<br>Developer &amp;<br><em>Problem Solver</em>
+      </h1>
+      <p class="hero-sub">
+        I build end-to-end web applications using the MERN stack, Python, and Java &mdash;
+        from robust REST APIs to polished React interfaces &mdash; focused on clean
+        architecture and real-world impact.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact"  class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <img src="profile.jpeg" alt="Full-Stack Developer" class="hero-photo" />
+        <div class="hero-photo-badge">
+          <span class="badge-dot"></span> Available for work
+        </div>
+      </div>
+      <div class="hero-stat-grid">
+        <div class="stat-card">
+          <div class="num" data-count="4">0</div>
+          <div class="label">Projects Built</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" data-count="1">0</div>
+          <div class="label">Years Exp.</div>
+        </div>
+        <div class="stat-card">
+          <div class="num" data-count="8">0</div>
+          <div class="label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="num">&#8734;</div>
+          <div class="label">Lines of Code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Expertise</div>
+      <h2 class="section-title">Languages &amp; Tech Stack</h2>
+    </div>
+    <div class="skill-tabs reveal d1">
+      <button class="tab-btn active"   data-tab="all">All</button>
+      <button class="tab-btn tab-mern" data-tab="mern">&#9889; MERN</button>
+      <button class="tab-btn" data-tab="languages">Languages</button>
+      <button class="tab-btn" data-tab="frontend">Frontend</button>
+      <button class="tab-btn" data-tab="backend">Backend</button>
+      <button class="tab-btn" data-tab="database">Database</button>
+      <button class="tab-btn" data-tab="tools">Tools</button>
+    </div>
+    <div class="skills-grid reveal d2" id="skills-grid">
+
+      <!-- MERN -->
+      <div class="skill-card skill-card--mern" data-category="mern">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#47A248"/><ellipse cx="16" cy="11" rx="9" ry="3.5" stroke="#fff" stroke-width="1.5" fill="none"/><path d="M7 11v5c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5v-5" stroke="#fff" stroke-width="1.5" fill="none"/><path d="M7 16v5c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5v-5" stroke="#fff" stroke-width="1.5" fill="none"/></svg></div>
+        <div class="skill-name">MongoDB</div>
+        <div class="skill-meta">NoSQL Database</div>
+        <div class="skill-level"><div class="level-bar" style="--w:92%"></div></div>
+        <div class="skill-pct">92%</div>
+      </div>
+
+      <div class="skill-card skill-card--mern" data-category="mern">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#000"/><path d="M6 8h20v2H6zM6 15h14v2H6zM6 22h20v2H6z" fill="#fff"/></svg></div>
+        <div class="skill-name">Express.js</div>
+        <div class="skill-meta">Backend Framework</div>
+        <div class="skill-level"><div class="level-bar" style="--w:90%"></div></div>
+        <div class="skill-pct">90%</div>
+      </div>
+
+      <div class="skill-card skill-card--mern" data-category="mern">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#20232A"/><circle cx="16" cy="16" r="3" fill="#61DAFB"/><ellipse cx="16" cy="16" rx="11" ry="4.5" stroke="#61DAFB" stroke-width="1.5" fill="none"/><ellipse cx="16" cy="16" rx="11" ry="4.5" stroke="#61DAFB" stroke-width="1.5" fill="none" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="11" ry="4.5" stroke="#61DAFB" stroke-width="1.5" fill="none" transform="rotate(120 16 16)"/></svg></div>
+        <div class="skill-name">React</div>
+        <div class="skill-meta">Frontend Library</div>
+        <div class="skill-level"><div class="level-bar" style="--w:93%"></div></div>
+        <div class="skill-pct">93%</div>
+      </div>
+
+      <div class="skill-card skill-card--mern" data-category="mern">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#339933"/><path d="M10 20c0 2.5 2.5 4 6 4s6-1.5 6-4-2.5-4-6-4-6 1.5-6 4z" stroke="#fff" stroke-width="1.5" fill="none"/><path d="M10 20V12c0-2.5 2.5-4 6-4s6 1.5 6 4v8" stroke="#fff" stroke-width="1.5" fill="none"/></svg></div>
+        <div class="skill-name">Node.js</div>
+        <div class="skill-meta">Runtime Environment</div>
+        <div class="skill-level"><div class="level-bar" style="--w:91%"></div></div>
+        <div class="skill-pct">91%</div>
+      </div>
+
+      <!-- Languages -->
+      <div class="skill-card" data-category="languages">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#F7DF1E"/><path d="M6 26l2.6-1.6c.5.9.95 1.65 2.05 1.65 1.05 0 1.7-.41 1.7-2V13h3.2v11.1c0 3.3-1.95 4.8-4.8 4.8-2.6 0-4.1-1.35-4.75-2.9zm11.5-.4l2.6-1.6c.7 1.15 1.6 2 3.2 2 1.35 0 2.2-.67 2.2-1.6 0-1.1-.88-1.5-2.35-2.15l-.8-.35c-2.33-1-3.87-2.25-3.87-4.9 0-2.43 1.85-4.28 4.75-4.28 2.06 0 3.54.72 4.6 2.6l-2.5 1.6c-.55-.98-1.15-1.37-2.1-1.37-.96 0-1.57.6-1.57 1.37 0 .96.6 1.35 2 1.97l.8.34c2.74 1.18 4.28 2.38 4.28 5.08 0 2.9-2.28 4.5-5.35 4.5-3 0-4.93-1.43-5.87-3.21z" fill="#000"/></svg></div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-level"><div class="level-bar" style="--w:95%"></div></div>
+        <div class="skill-pct">95%</div>
+      </div>
+
+      <div class="skill-card" data-category="languages">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#3572A5"/><path d="M16 7a9 9 0 100 18A9 9 0 0016 7zm-1.5 12.5v-5a1.5 1.5 0 013 0v5a1.5 1.5 0 01-3 0zM16 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3z" fill="#fff"/></svg></div>
+        <div class="skill-name">Python</div>
+        <div class="skill-level"><div class="level-bar" style="--w:80%"></div></div>
+        <div class="skill-pct">80%</div>
+      </div>
+
+      <div class="skill-card" data-category="languages">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#EA2D2E"/><path d="M16 6C10.477 6 6 10.477 6 16s4.477 10 10 10 10-4.477 10-10S21.523 6 16 6zm0 3a7 7 0 110 14A7 7 0 0116 9z" fill="#fff" opacity=".2"/><path d="M13 11l6 5-6 5V11z" fill="#fff"/></svg></div>
+        <div class="skill-name">Java</div>
+        <div class="skill-level"><div class="level-bar" style="--w:75%"></div></div>
+        <div class="skill-pct">75%</div>
+      </div>
+
+      <div class="skill-card" data-category="languages">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#3178C6"/><path d="M8 16h16M8 20h10M8 12h16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div class="skill-name">TypeScript</div>
+        <div class="skill-level"><div class="level-bar" style="--w:70%"></div></div>
+        <div class="skill-pct">70%</div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#764ABC"/><path d="M16 5l9 14H7L16 5z" fill="#fff" opacity=".9"/><path d="M25 19l4 8H3l4-8h18z" fill="#fff" opacity=".6"/></svg></div>
+        <div class="skill-name">Redux</div>
+        <div class="skill-level"><div class="level-bar" style="--w:82%"></div></div>
+        <div class="skill-pct">82%</div>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#06B6D4"/><path d="M8 10h16M8 16h16M8 22h16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div class="skill-name">Tailwind CSS</div>
+        <div class="skill-level"><div class="level-bar" style="--w:88%"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+
+      <div class="skill-card" data-category="frontend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#E34F26"/><path d="M7 5l2 22 7 2 7-2 2-22H7z" fill="#fff" opacity=".8"/><path d="M16 24.5l-5.5-1.5L9 9h7v15.5z" fill="#fff"/></svg></div>
+        <div class="skill-name">HTML / CSS</div>
+        <div class="skill-level"><div class="level-bar" style="--w:92%"></div></div>
+        <div class="skill-pct">92%</div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#306998"/><path d="M16 5c-4 0-7 1.5-7 4v3c0 1.5 1 2.5 2.5 3H16v1H9c-2 0-4 1.5-4 4v3c0 2.5 3 4 7 4h2c4 0 7-1.5 7-4v-3c0-1.5-1-2.5-2.5-3H16v-1h7c2 0 4-1.5 4-4V9c0-2.5-3-4-7-4h-4z" fill="#FFD43B" opacity=".8"/></svg></div>
+        <div class="skill-name">Django / Flask</div>
+        <div class="skill-level"><div class="level-bar" style="--w:65%"></div></div>
+        <div class="skill-pct">65%</div>
+      </div>
+
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#6DB33F"/><path d="M10 10h12v12H10z" fill="#fff" opacity=".9"/><path d="M14 14h4v4h-4z" fill="#6DB33F"/></svg></div>
+        <div class="skill-name">Spring Boot</div>
+        <div class="skill-level"><div class="level-bar" style="--w:60%"></div></div>
+        <div class="skill-pct">60%</div>
+      </div>
+
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#010101"/><circle cx="16" cy="16" r="8" stroke="#fff" stroke-width="1.5" fill="none"/><path d="M16 10v12M10 16h12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div class="skill-name">Socket.io</div>
+        <div class="skill-level"><div class="level-bar" style="--w:80%"></div></div>
+        <div class="skill-pct">80%</div>
+      </div>
+
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#FF6C37"/><path d="M8 10h16v2H8zM8 15h12v2H8zM8 20h14v2H8z" fill="#fff"/></svg></div>
+        <div class="skill-name">REST APIs</div>
+        <div class="skill-level"><div class="level-bar" style="--w:92%"></div></div>
+        <div class="skill-pct">92%</div>
+      </div>
+
+      <div class="skill-card" data-category="backend">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#E10098"/><path d="M16 6l8 4.5v9L16 24l-8-4.5v-9L16 6z" stroke="#fff" stroke-width="1.5" fill="none"/><circle cx="16" cy="16" r="2.5" fill="#fff"/></svg></div>
+        <div class="skill-name">GraphQL</div>
+        <div class="skill-level"><div class="level-bar" style="--w:55%"></div></div>
+        <div class="skill-pct">55%</div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#336791"/><ellipse cx="16" cy="11" rx="9" ry="3.5" stroke="#fff" stroke-width="1.5" fill="none"/><path d="M7 11v10c0 1.93 4.03 3.5 9 3.5s9-1.57 9-3.5V11" stroke="#fff" stroke-width="1.5" fill="none"/><path d="M7 16h18" stroke="#fff" stroke-width="1.5"/></svg></div>
+        <div class="skill-name">PostgreSQL</div>
+        <div class="skill-level"><div class="level-bar" style="--w:68%"></div></div>
+        <div class="skill-pct">68%</div>
+      </div>
+
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#DC382D"/><path d="M9 20l7-8 7 8H9z" fill="#fff"/><circle cx="16" cy="14" r="2" fill="#DC382D"/></svg></div>
+        <div class="skill-name">Redis</div>
+        <div class="skill-level"><div class="level-bar" style="--w:62%"></div></div>
+        <div class="skill-pct">62%</div>
+      </div>
+
+      <div class="skill-card" data-category="database">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#00758F"/><path d="M9 22l3-12h8l3 12" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"/><path d="M12 17h8" stroke="#fff" stroke-width="1.5"/></svg></div>
+        <div class="skill-name">MySQL</div>
+        <div class="skill-level"><div class="level-bar" style="--w:72%"></div></div>
+        <div class="skill-pct">72%</div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#F05032"/><path d="M9 16l4 4 10-10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="skill-name">Git &amp; GitHub</div>
+        <div class="skill-level"><div class="level-bar" style="--w:90%"></div></div>
+        <div class="skill-pct">90%</div>
+      </div>
+
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#2496ED"/><path d="M16 8l8 4-8 4-8-4 8-4zM8 16l8 4 8-4M8 20l8 4 8-4" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" fill="none"/></svg></div>
+        <div class="skill-name">Docker</div>
+        <div class="skill-level"><div class="level-bar" style="--w:65%"></div></div>
+        <div class="skill-pct">65%</div>
+      </div>
+
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#FF6C37"/><path d="M16 10a6 6 0 010 12" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="16" cy="16" r="2" fill="#fff"/></svg></div>
+        <div class="skill-name">Postman</div>
+        <div class="skill-level"><div class="level-bar" style="--w:88%"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+
+      <div class="skill-card" data-category="tools">
+        <div class="skill-icon"><svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#232F3E"/><path d="M8 16a8 8 0 1116 0" stroke="#FF9900" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M20 20l4 2-2-4" fill="#FF9900"/></svg></div>
+        <div class="skill-name">AWS / Cloud</div>
+        <div class="skill-level"><div class="level-bar" style="--w:55%"></div></div>
+        <div class="skill-pct">55%</div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="section" id="mern">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Core Stack</div>
+      <h2 class="section-title">Built on <em>MERN</em></h2>
+    </div>
+
+    <p class="mern-intro reveal d1">
+      Every project I build is powered by the MERN stack — four technologies that work
+      seamlessly together to deliver fast, scalable, full-stack web applications from
+      a single JavaScript ecosystem.
+    </p>
+
+    <div class="mern-grid">
+
+      <!-- MongoDB -->
+      <div class="mern-card reveal">
+        <div class="mern-card__letter" style="color:#47A248">M</div>
+        <div class="mern-card__icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <ellipse cx="24" cy="15" rx="13" ry="5" stroke="#47A248" stroke-width="2" fill="none"/>
+            <path d="M11 15v8c0 2.76 5.82 5 13 5s13-2.24 13-5v-8"  stroke="#47A248" stroke-width="2" fill="none"/>
+            <path d="M11 23v8c0 2.76 5.82 5 13 5s13-2.24 13-5v-8"  stroke="#47A248" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="mern-card__name">MongoDB</div>
+        <div class="mern-card__role">Database Layer</div>
+        <p class="mern-card__desc">A flexible NoSQL document database that stores data in JSON-like format. I use it for schema design, aggregation pipelines, indexing, and Mongoose ODM for elegant data modelling.</p>
+        <ul class="mern-card__features">
+          <li>Document-oriented storage</li>
+          <li>Mongoose ODM &amp; Schema design</li>
+          <li>Aggregation &amp; Indexing</li>
+          <li>MongoDB Atlas (cloud)</li>
+        </ul>
+        <div class="mern-card__bar">
+          <div class="mern-bar-fill" style="--w:92%;--c:#47A248"></div>
+          <span>92%</span>
+        </div>
+      </div>
+
+      <!-- Express.js -->
+      <div class="mern-card reveal d1">
+        <div class="mern-card__letter" style="color:#888">E</div>
+        <div class="mern-card__icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <rect x="8"  y="14" width="32" height="4" rx="2" fill="#555"/>
+            <rect x="8"  y="22" width="24" height="4" rx="2" fill="#555"/>
+            <rect x="8"  y="30" width="28" height="4" rx="2" fill="#555"/>
+          </svg>
+        </div>
+        <div class="mern-card__name">Express.js</div>
+        <div class="mern-card__role">Backend Framework</div>
+        <p class="mern-card__desc">A minimal and unopinionated Node.js web framework. I use it to build RESTful APIs, handle middleware, manage authentication with JWT, and structure scalable backend architectures.</p>
+        <ul class="mern-card__features">
+          <li>RESTful API design</li>
+          <li>Middleware &amp; routing</li>
+          <li>JWT &amp; session auth</li>
+          <li>Error handling patterns</li>
+        </ul>
+        <div class="mern-card__bar">
+          <div class="mern-bar-fill" style="--w:90%;--c:#555"></div>
+          <span>90%</span>
+        </div>
+      </div>
+
+      <!-- React -->
+      <div class="mern-card reveal d2">
+        <div class="mern-card__letter" style="color:#61DAFB">R</div>
+        <div class="mern-card__icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="4" fill="#61DAFB"/>
+            <ellipse cx="24" cy="24" rx="18" ry="7" stroke="#61DAFB" stroke-width="2" fill="none"/>
+            <ellipse cx="24" cy="24" rx="18" ry="7" stroke="#61DAFB" stroke-width="2" fill="none" transform="rotate(60 24 24)"/>
+            <ellipse cx="24" cy="24" rx="18" ry="7" stroke="#61DAFB" stroke-width="2" fill="none" transform="rotate(120 24 24)"/>
+          </svg>
+        </div>
+        <div class="mern-card__name">React</div>
+        <div class="mern-card__role">Frontend Library</div>
+        <p class="mern-card__desc">A declarative UI library for building component-based interfaces. I use React with hooks, Context API, Redux Toolkit, and React Router to create fast, maintainable front-ends.</p>
+        <ul class="mern-card__features">
+          <li>Component architecture</li>
+          <li>Hooks &amp; Context API</li>
+          <li>Redux Toolkit state</li>
+          <li>React Router DOM</li>
+        </ul>
+        <div class="mern-card__bar">
+          <div class="mern-bar-fill" style="--w:93%;--c:#61DAFB"></div>
+          <span>93%</span>
+        </div>
+      </div>
+
+      <!-- Node.js -->
+      <div class="mern-card reveal d3">
+        <div class="mern-card__letter" style="color:#339933">N</div>
+        <div class="mern-card__icon">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M24 6l18 10v16L24 42 6 32V16L24 6z" stroke="#339933" stroke-width="2" fill="none"/>
+            <path d="M24 14v10l8 5" stroke="#339933" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="mern-card__name">Node.js</div>
+        <div class="mern-card__role">Runtime Environment</div>
+        <p class="mern-card__desc">A JavaScript runtime built on Chrome's V8 engine enabling server-side JavaScript. I use Node for building APIs, real-time apps with Socket.io, CLI tools, and microservices.</p>
+        <ul class="mern-card__features">
+          <li>Event-driven &amp; async I/O</li>
+          <li>npm ecosystem</li>
+          <li>Socket.io real-time</li>
+          <li>Microservice patterns</li>
+        </ul>
+        <div class="mern-card__bar">
+          <div class="mern-bar-fill" style="--w:91%;--c:#339933"></div>
+          <span>91%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flow Diagram -->
+    <div class="mern-flow reveal">
+      <div class="flow-step">
+        <div class="flow-icon" style="background:#edf5f1;border-color:#47A248;color:#47A248">M</div>
+        <div class="flow-label">MongoDB</div>
+        <div class="flow-sub">Stores Data</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon" style="background:#f5f5f5;border-color:#aaa;color:#555">E</div>
+        <div class="flow-label">Express.js</div>
+        <div class="flow-sub">Handles API</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon" style="background:#e8fbff;border-color:#61DAFB;color:#0baed4">R</div>
+        <div class="flow-label">React</div>
+        <div class="flow-sub">Renders UI</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon" style="background:#edf7ed;border-color:#339933;color:#339933">N</div>
+        <div class="flow-label">Node.js</div>
+        <div class="flow-sub">Runs Server</div>
+      </div>
+    </div>
+
+  </section>
+
+  <hr class="divider" />
+
+  <section class="section" id="projects">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Work</div>
+      <h2 class="section-title">Selected <em>Projects</em></h2>
+    </div>
+
+    <div class="projects-list">
+
+      <!-- Project 01 -->
+      <div class="project-row reveal">
+        <div class="proj-num">01</div>
+        <div class="proj-body">
+          <h3 class="proj-name">ShopMERN — E-Commerce Platform</h3>
+          <p class="proj-desc">Full-featured online store with product catalogue, shopping cart, Stripe payment integration, JWT authentication, order history, and a complete admin dashboard for inventory and order management.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">MongoDB</span>
+            <span class="proj-tag">Express</span>
+            <span class="proj-tag">Stripe API</span>
+            <span class="proj-tag">Redux Toolkit</span>
+            <span class="proj-tag">JWT</span>
+          </div>
+        </div>
+        <div class="proj-links-col">
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 02 -->
+      <div class="project-row reveal d1">
+        <div class="proj-num">02</div>
+        <div class="proj-body">
+          <h3 class="proj-name">SocialSphere — Social Media App</h3>
+          <p class="proj-desc">Twitter-inspired social platform with posts, likes, comments, follow/unfollow, image uploads via Cloudinary, real-time notifications, user profiles, and a personalized algorithmic feed.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">MongoDB</span>
+            <span class="proj-tag">Express</span>
+            <span class="proj-tag">Cloudinary</span>
+            <span class="proj-tag">JWT</span>
+            <span class="proj-tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="proj-links-col">
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="project-row reveal d2">
+        <div class="proj-num">03</div>
+        <div class="proj-body">
+          <h3 class="proj-name">ChatterBox — Real-Time Chat App</h3>
+          <p class="proj-desc">Instant messaging app powered by Socket.io with private and group chats, real-time typing indicators, online presence detection, persistent message history stored in MongoDB, and emoji support.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">Socket.io</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">MongoDB</span>
+            <span class="proj-tag">Express</span>
+            <span class="proj-tag">JWT Auth</span>
+          </div>
+        </div>
+        <div class="proj-links-col">
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 04 -->
+      <div class="project-row reveal d3">
+        <div class="proj-num">04</div>
+        <div class="proj-body">
+          <h3 class="proj-name">TaskFlow — Kanban Task Manager</h3>
+          <p class="proj-desc">Trello-style project management tool with drag-and-drop kanban boards, task assignment, deadlines, priority levels, team workspaces, progress tracking, and an analytics dashboard powered by Chart.js.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">React</span>
+            <span class="proj-tag">DnD Kit</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">MongoDB</span>
+            <span class="proj-tag">Express</span>
+            <span class="proj-tag">Chart.js</span>
+            <span class="proj-tag">JWT</span>
+          </div>
+        </div>
+        <div class="proj-links-col">
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="#" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">About</div>
+      <h2 class="section-title">A bit about <em>me</em></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="highlight">&ldquo;I care about writing code that is easy to read, maintain, and scale.&rdquo;</p>
+        <p>I am a <strong>Full-Stack Developer</strong> specialising in the MERN stack, with solid knowledge of Python (Django / Flask) and Java (Spring Boot). I love building products that feel effortless to use.</p>
+        <p>I work across the entire stack &mdash; designing MongoDB schemas, crafting Express REST APIs, building reactive React UIs, and deploying on cloud platforms. I am equally comfortable writing backend services in Python and Java when the project calls for it.</p>
+        <p>I am currently open to <strong>full-time roles, freelance projects, and open-source collaborations</strong> where I can solve meaningful problems alongside a great team.</p>
+      </div>
+      <div class="about-aside reveal d1">
+        <div class="about-photo-wrap">
+          <div class="about-photo-frame">
+            <img src="profile1.jpeg" alt="Full-Stack Developer" class="about-photo" />
+          </div>
+          <div class="about-photo-info">
+            <span class="about-photo-name">NAGESH BELKAR</span>
+            <span class="about-photo-role">MERN Stack Developer</span>
+          </div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-label">Location</div>
+          <div class="aside-value">Maharashtra, India</div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-label">Experience</div>
+          <div class="aside-value">1+ years building full-stack applications</div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-label">Languages</div>
+          <div class="aside-value">JavaScript &middot; Python &middot; Java &middot; TypeScript</div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-label">Currently learning</div>
+          <div class="aside-value">AWS &middot; Kubernetes &middot; System Design</div>
+        </div>
+        <div class="aside-block">
+          <div class="aside-label">Interests</div>
+          <div class="aside-value">Open source &middot; DSA &middot; Backend architecture</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="contact-wrap">
+      <div class="contact-left reveal">
+        <div class="section-eyebrow">Contact</div>
+        <p class="contact-msg">Let&rsquo;s build something <em>great</em> together.</p>
+        <a href="mailto:your@email.com" class="contact-email">nageshworkin@gmail.com</a>
+        <div class="social-row">
+          <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="#" class="social-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal d1">
+        <div class="avail-tag">Open to work</div>
+        <div class="contact-detail">
+          <div class="cd-label">Preferred roles</div>
+          <div class="cd-value">Full-Stack Developer &middot; Backend Developer &middot; MERN Developer</div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-label">Work type</div>
+          <div class="cd-value">Full-time &middot; Freelance &middot; Contract</div>
+        </div>
+        <div class="contact-detail">
+          <div class="cd-label">Response time</div>
+          <div class="cd-value">Within 24 hours</div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" required />
+              <span class="field-error" id="email-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            <span class="field-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn-primary form-btn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" hidden>Sending&hellip;</span>
+          </button>
+          <div class="form-success" id="form-success" hidden>
+            &#10003; Message sent! I&rsquo;ll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-name">NAGESH BELKAR</span>
+    <span>Full-Stack Developer &middot; 2025</span>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
